@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial mod",
+	"description": "This is a tutorial mod by Gunner aka GHutch187",
+	"authors": [
+		"Gunner!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gunner.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"com.gunner.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"com.gunner.tutorialmod.TutorialModClient"
+			]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
