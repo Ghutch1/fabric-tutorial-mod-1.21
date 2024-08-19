@@ -1,6 +1,7 @@
 package com.gunner.tutorialmod;
 
 import com.gunner.tutorialmod.block.ModBlocks;
+import com.gunner.tutorialmod.item.ModItemGroups;
 import com.gunner.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
